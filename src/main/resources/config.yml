@@ -1,0 +1,59 @@
+﻿# RainVault Configuration
+
+# Начальный баланс для новых игроков
+starting-balance: 1000
+
+# Максимальный баланс
+max-balance: 100000000000
+
+# Режим отладки (логирование дополнительной информации)
+debug: false
+
+# Настройки MySQL
+mysql:
+  enabled: true
+  host: db1.mlpixel.cc
+  port: 3306
+  database: s55_RSQL
+  username: u55_ATuNllbT8K
+  password: LYiQTYK@.cCoMW!iiGrGIohR
+  table: RainVault
+
+# Сообщения
+messages:
+  prefix: "&8[&bRainVault&8] &7"
+  
+  # Команда /pay
+  pay-sent: "&aВы отправили &e%amount% монет &aигроку &e%player%"
+  pay-received: "&aВы получили &e%amount% монет &aот игрока &e%player%"
+  pay-toggle-enabled: "&aВы включили получение денег"
+  pay-toggle-disabled: "&cВы отключили получение денег"
+  pay-disabled-target: "&cИгрок &e%player% &cотключил получение денег"
+  pay-insufficient: "&cУ вас недостаточно монет! Нужно: &e%amount%"
+  pay-self: "&cВы не можете отправить деньги самому себе!"
+  
+  # Админ команды
+  admin-give: "&aВы выдали &e%amount% монет &aигроку &e%player%"
+  admin-give-received: "&aВам выдали &e%amount% монет"
+  admin-set: "&aВы установили баланс игрока &e%player% &aна &e%amount% монет"
+  admin-set-received: "&aВаш баланс установлен на &e%amount% монет"
+  admin-take: "&aВы забрали &e%amount% монет &aу игрока &e%player%"
+  admin-take-received: "&cУ вас забрали &e%amount% монет"
+  admin-reset: "&aВы сбросили баланс игрока &e%player% &aдо &e%amount% монет"
+  admin-reset-received: "&aВаш баланс сброшен до &e%amount% монет"
+  admin-check: "&aБаланс игрока &e%player%&a: &e%amount% монет"
+  
+  # Ошибки
+  player-not-found: "&cИгрок не найден!"
+  invalid-amount: "&cНеверное количество монет!"
+  max-balance-reached: "&cДостигнут максимальный баланс!"
+  insufficient-balance: "&cУ игрока недостаточно монет!"
+  no-permission: "&cУ вас нет прав на использование этой команды!"
+  
+  # Использование команд
+  usage-pay: "&cИспользование: /pay <игрок> <количество> или /pay toggle"
+  usage-rainvault: "&cИспользование: /rainvault <give|set|take|check|reset|reload> <игрок> [количество]"
+
+  # Reload
+  reload-success: "&aКонфиг перезагружен."
+  reload-fail: "&cОшибка перезагрузки. Смотрите консоль."

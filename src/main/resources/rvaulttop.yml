@@ -1,0 +1,12 @@
+# RainVault Top Configuration
+# Настройка отображения топа игроков
+
+# Формат для плейсхолдера %rainvault_top_N%
+# Доступные переменные: %position%, %player%, %balance%, %formatted_balance%
+top-format: "&e%position%. &f%player% &7- &a%formatted_balance% монет"
+
+# Количество игроков в топе
+top-size: 10
+
+# Обновление топа (в секундах)
+update-interval: 300

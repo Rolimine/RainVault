@@ -1,0 +1,22 @@
+# RainVault Baltop Messages
+# Use color codes with &
+
+# Lines shown before the list
+header:
+  - "&8&m------------------------"
+  - "&bBalance Top"
+  - "&7Top richest players:"
+
+# Line format for each entry
+# Available: %position%, %player%, %balance%, %formatted_balance%
+line-format: "&e%position%. &f%player% &7- &a%formatted_balance% coins"
+
+# Lines shown after the list
+footer:
+  - "&8&m------------------------"
+
+# Message when top list is empty
+empty: "&cNo players in top yet."
+
+# Optional message while loading (empty string to disable)
+loading: "&7Loading top..."

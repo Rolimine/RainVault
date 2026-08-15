@@ -1,0 +1,41 @@
+﻿name: RainVault
+version: '1.0-SNAPSHOT'
+main: rd.rolidev.rainvault.RainVault
+api-version: '1.16'
+author: RoliDev
+depend: [Vault]
+softdepend: [PlaceholderAPI]
+
+commands:
+  pay:
+    description: Отправить монеты игроку
+    usage: /pay <игрок> <количество> или /pay toggle
+  rainvault:
+    description: Управление экономикой
+    usage: /rainvault <give|set|take|check|reset|reload> <игрок> <количество>
+    aliases: [rv]
+    permission: rainvault.admin
+  baltop:
+    description: Топ балансов
+    usage: /baltop
+    aliases: [balancetop]
+
+permissions:
+  rainvault.admin:
+    description: Доступ к админ командам
+    default: op
+  rainvault.pay:
+    description: Возможность отправлять деньги
+    default: true
+  rainvault.reload:
+    description: Перезагрузка конфигурации
+    default: op
+  rainvault.bypass.max:
+    description: Обход лимита максимального баланса
+    default: false
+  rainvault.bypass.toggle:
+    description: Обход блокировки получения денег
+    default: false
+  rainvault.baltop:
+    description: Доступ к /baltop
+    default: true
